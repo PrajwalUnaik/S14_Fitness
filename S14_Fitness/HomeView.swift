@@ -20,7 +20,7 @@ struct HomeView: View {
                             }
                             .padding(.bottom)
                         
-                        MainLowView()
+                        MainLowView().padding(.vertical ,0)
                     }
                 }
                 Spacer()
@@ -29,8 +29,6 @@ struct HomeView: View {
                     .frame(height: 50)
                     .foregroundColor(.black)
                     .overlay{
-                        
-                        
                         HStack {
                             Spacer()
                             Button(action:  {}, label: {Text("Home")})
@@ -43,9 +41,6 @@ struct HomeView: View {
                             Spacer()
                         }.fontWeight(.semibold)
                         .foregroundColor(.white)
-                        
-                        
-                        
                     }
             }
             .ignoresSafeArea()
